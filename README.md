@@ -1,54 +1,42 @@
-# React + TypeScript + Vite
+# 🎲 Gerador de Frases Aleatórias
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação simples e temática que exibe frases aleatórias clicando em um botão — construída com **React**, **TypeScript** e **Vite**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧩 Visão geral
 
-## Expanding the ESLint configuration
+Este mini‑projeto utiliza a stack React + TypeScript + Vite para:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Aprender a configurar um ambiente moderno com **Vite** e suporte a HMR
+- Praticar componentes React, estado e eventos
+- Usar dados locais para exibir frases aleatórias
+- Aplicar linting com **ESLint** e boas práticas de código :contentReference[oaicite:1]{index=1}
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ⚙️ Tecnologias
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React** (Functional Components + Hooks)
+- **TypeScript** — tipagem segura
+- **Vite** — bundler leve e rápido
+- **ESLint** — qualidade de código
+- **CSS** — estilos simples
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 📚 Funcionalidades
+
+- Botão para gerar frase aleatória
+- Exibição de frase com componentes React
+- Dados carregados a partir de um array/local
+- Ambiente de desenvolvimento com watch e rebuild automático
+
+---
+
+## 🚀 Como rodar localmente
+
+1. Clone o projeto:
+   ```bash
+   git clone https://github.com/leandrowork03/projeto-de-frases-aleatorias.git
+   cd projeto-de-frases-aleatorias
